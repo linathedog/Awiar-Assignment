@@ -172,6 +172,21 @@ padding: 2em 0 0 2em;
   text-align: center;
   letter-spacing: 0.1em;
 }
+.share-profile {
+  padding-left: 20px;
+}
 .edit-profile p {
-
+  color: #FFFFFF;
+  background-color: #48D4C1;
+  padding: 7px 15px;
+  border-radius: 3em;
+}
+.share-profile p{
+  color: #4D4D4D;
+  background-color: #F6F6F6;
+  padding: 7px 20px;
+  border-radius: 3em;
+}
+.edit-profile span , .share-profile span {
+  padding-right:0.3em;
 }
