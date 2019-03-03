@@ -1,5 +1,141 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700|Roboto:400,700" rel="stylesheet">
+
+
+<div class="container">
+  <nav class="navbar">
+      <!-- Logo -->
+      <div class="navbar-brand">
+      <a class="awr-logo">
+          <img class="default-logo" src="assets/images/awiarlogo.png">
+      </a>
+      </div>
+      <!-- Search bar -->
+      <div class="search-container">
+          <div class="search-bar">
+              <span class="fa fa-search search-icon">{{fa-icon 'search'}}</span>
+              <input class="search-field" placeholder="search stories and profiles" type="text">
+          </div>
+      </div>
+      <!-- Widgets -->
+      <div class="nav-right">
+      <div class="widget-container">
+          <!-- Settings widget -->
+          <div class="settings-widget">
+              <img class="settings-widget-icon widgets" src="assets/images/settings.png">
+          </div>
+          {{!-- Notifications widget --}}
+          <div class="notification-widget widgets">
+              <img class="notification-widget-icon" src="assets/images/bellicon.png">
+            {{!--  <div class="notification-box">
+                  <div class="notification-box-title"><div class="fa fa-bell"></div>Notifications</div>
+                  <p class="notification-box-read">Mark all as read</p>
+                 <div class="notification-box-messages">
+                      <!-- Notification messages are hardcoded -->
+                      <div class="notification-message">
+                          <span><span>Andrew Kozadinos liked your article Righteous Indignation in the 21st century</span></span>
+                          <div class="notification-message-date">
+                              Dec 18, 2018 at 09:25 am
+                          </div>
+                      </div>
+                      <div class="notification-message">
+                          <span><span>Iris Goldberg liked your article Righteous Indignation in the 21st century</span></span>
+                          <div class="notification-message-date">
+                              Dec 18, 2018 at 09:25 am
+                          </div>
+                      </div>
+                      <div class="notification-message">
+                          <span><span>Smith Kevinson liked your article Righteous Indignation in the 21st century</span></span>
+                          <div class="notification-message-date">
+                              Dec 18, 2018 at 09:25 am
+                          </div>
+                      </div>
+                      <div class="notification-message">
+                          <span><span>Mary Right liked your article Righteous Indignation in the 21st century</span></span>
+                          <div class="notification-message-date">
+                              Dec 18, 2018 at 09:25 am
+                          </div>
+                      </div>
+                      <div class="notification-message">
+                          <span><span>Andrew Kozadinos liked your article Righteous Indignation in the 21st century</span></span>
+                          <div class="notification-message-date">
+                              Dec 18, 2018 at 09:25 am
+                          </div>
+                      </div>
+                      <div class="notification-message">
+                          <span><span>Mary Right liked your article Righteous Indignation in the 21st century</span></span>
+                          <div class="notification-message-date">
+                              Dec 18, 2018 at 09:25 am
+                          </div>
+                      </div>
+                      <div class="notification-message">
+                          <span><span>Andrew Kozadinos liked your article Righteous Indignation in the 21st century</span></span>
+                          <div class="notification-message-date">
+                              Dec 18, 2018 at 09:25 am
+                          </div>
+                      </div>
+                  </div>
+              </div> --}}
+          </div>
+      </div>
+          <!-- User widget -->
+          <div class="user-widget widgets">
+          <img class="user-widget-icon" src="assets/images/profilephoto.png">
+
+          {{!--
+
+              <div class="user-box">
+                  <div class="user-box-title">
+                      <div class="user-box-info">
+                          <img class="user-box-image" src="icons/user-box.png">
+                          <div class="user-box-details">
+                              <span class="user-box-name">Mark Hughes</span>
+                              <span class="user-box-email">markhu@gmail.com</span>
+                              <span class="user-box-role"><div class="fa fa-star-o"><span>ADMINISTRATOR</span></div></span>
+                          </div>
+                      </div>
+                      <div class="user-box-footer">
+                          <div class="user-box-profile"><div class="fa fa-user"></div><span>PROFILE</span></div>
+                          <div class="user-box-signout"><div class="fa fa-sign-out"></div><span>SIGN OUT</span></div>
+                      </div>
+                  </div>
+              </div>
+          </div>--}}
+          </div>
+        </div>
+  </nav>
+  <!-- Background image -->
+  <div class="background-image">
+
+
+      <div class="profile-header">
+
+          <!-- Profie picture -->
+          <figure class="profile-picture">
+              <img class='prof-pic'src="assets/images/profilephoto.png">
+          </figure>
+          <!-- User info -->
+          <div class="header-card">
+              <div class="username">
+                  <h2>Mark Hughes</h2>
+                  <span class="followers-number">127</span> <span class="followers"> FOLLOWERS </span><span class="followers-dot">•</span>
+                <span class="following-number">86</span>  <span class="following">  FOLLOWING</span>
+              </div>
+              <div class="title">
+                  <span>Marketing Manager @ Awiar Solutions</span>
+              </div>
+              <div class="profile-buttons">
+                  <div class="edit-profile">
+                      <p>EDIT{{fa-icon 'pen'}} </p>
+                  </div>
+                  <div class="share-profile">
+                      <p>SHARE{{fa-icon 'share-alt'}}</p>
+                  </div>
+              </div>
+
+          </div>
+        </div>
+    </div>
 
 {{outlet}}
+
+</div>
