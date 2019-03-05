@@ -1,5 +1,5 @@
 <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700|Roboto:400,700" rel="stylesheet">
-
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 <div class="container">
   <nav class="navbar">
@@ -12,7 +12,7 @@
       <!-- Search bar -->
       <div class="search-container">
           <div class="search-bar">
-              <span class="fa fa-search search-icon">{{fa-icon 'search'}}</span>
+              <span class=" search-icon">{{fa-icon 'search'}}</span>
               <input class="search-field" placeholder="search stories and profiles" type="text">
           </div>
       </div>
@@ -135,16 +135,113 @@
           </div>
         </div>
     </div>
-    <!-- About Section -->
-    <div class="about-section">
-      <h2>About <span>{{fa-icon 'pen'}}</span></h2>
-      <p> But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
-         will give you a complete account of the system, and expound the actual teachings of the great explorer of the
-         truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it
-         is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that
-         are extremely painful.</p>
+    <!-- Main Content -->
+    <div class="main-container">
+      <!-- About Section -->
+      <div class="about-section">
+        <h2>About <div class="about-edit">{{fa-icon 'pen'}}</div></h2>
+        <p> But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
+           will give you a complete account of the system, and expound the actual teachings of the great explorer of the
+           truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it
+           is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that
+           are extremely painful.</p>
+      </div>
+      <div class="articles">
+        <div class="articles-title">
+          Your latest stories and opinions
+        </div>
+      </div>
+      <!-- Article Boxes -->
+      <div class="article-box-container">
+        <div class="article-box">
+          <div class="article-box-header">
+            <div class="article-box-header-photo">
+              <img src="assets/images/profilephoto.png">
+            </div>
+            <div class='article-box-info'>
+              <p class="article-box-info-name"> Mark Hughes</p>
+              <p class="article-box-info-date">Jun 2nd 2018</p>
+            </div>
+          </div>
+          <div class="article-box-main">
+            <img src="assets/images/article-box-image-1.png">
+            <p>Righteous Indignation in the 21st century: an essay</p>
+            <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue...</p>
+            <div class="article-box-footer">
+              <p>Read More{{fa-icon "forward"}}</p>
+              <i class="far fa-comments"></i>
+              <span class="followers-number">2</span>
+              <span class="article-box-footer-comments">comments</span>
+              <div class="article-box-footer-right">
+                <span class="followers-number">60</span>
+                <i class="far fa-heart"></i>
+                <i class="far fa-bookmark"></i>
+              </div>
+            </div>
+          </div>
+          <div>
+          </div>
+        </div>
+        <div class="article-box">
+          <div class="article-box-header">
+            <div class="article-box-header-photo">
+              <img src="assets/images/profilephoto.png">
+            </div>
+            <div class='article-box-info'>
+              <p class="article-box-info-name"> Mark Hughes</p>
+              <p class="article-box-info-date">Jun 2nd 2018</p>
+            </div>
+          </div>
+          <div class="article-box-main">
+            <img src="assets/images/article-box-image-2.png">
+            <p>Righteous Indignation in the 21st century: an essay</p>
+            <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue...</p>
+            <div class="article-box-footer">
+              <p>Read More{{fa-icon "forward"}}</p>
+              <i class="far fa-comments"></i>
+              <span class="followers-number">2</span>
+              <span class="article-box-footer-comments">comments</span>
+              <div class="article-box-footer-right">
+                <span class="followers-number">60</span>
+                <i class="far fa-heart"></i>
+                <i class="far fa-bookmark"></i>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="article-box">
+          <div class="article-box-header">
+            <div class="article-box-header-photo">
+              <img src="assets/images/profilephoto.png">
+            </div>
+            <div class='article-box-info'>
+              <p class="article-box-info-name"> Mark Hughes</p>
+              <p class="article-box-info-date">Jun 2nd 2018</p>
+            </div>
+          </div>
+          <div class="article-box-main">
+            <img src="assets/images/article-box-image-3.png">
+            <p>Righteous Indignation in the 21st century: an essay</p>
+            <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue...</p>
+            <div class="article-box-footer">
+              <p>Read More{{fa-icon "forward"}}</p>
+              <i class="far fa-comments"></i>
+              <span class="followers-number">2</span>
+              <span class="article-box-footer-comments">comments</span>
+              <div class="article-box-footer-right">
+                <span class="followers-number">60</span>
+                <i class="far fa-heart"></i>
+                <i class="far fa-bookmark"></i>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
     </div>
-    
-{{outlet}}
+
+
 
 </div>
