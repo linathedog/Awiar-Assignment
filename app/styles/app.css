@@ -243,11 +243,22 @@ padding: 2em 0 0 2em;
 }
 
 /* Articles Section */
+
+.left-arrow-articles{
+  position: absolute;
+  margin:218px 0 0 5.5%;
+}
+.right-arrow-articles{
+
+  position: absolute;
+  margin:218px 0 0 94%;
+}
+
 .articles {
   margin-top: 80px;
 }
 .articles-title {
-  margin-left: 25px;
+  margin-left: 7%;
   margin-bottom: 22px;
   font-family: Quicksand;
   font-style: normal;
@@ -257,11 +268,16 @@ padding: 2em 0 0 2em;
   color: #4D4D4D;
 }
 .article-box-container{
-  width:80%;
-  
+  display: flex;
+  width:85%;
+  height:445px;
+  margin: auto;
+  overflow: hidden;
+
 }
 
 .article-box {
+  position: relative;
   display: inline-block;
   margin-right: 25px;
   border-radius: 10px;
@@ -367,4 +383,22 @@ color: #4D4D4D;
 }
 .article-box-footer i{
   color:#4D4D4D;
+}
+/* Experience and Accomplishments*/
+.experience {
+  width:85%;
+  margin: auto;
+  margin-top: 50px;
+}
+.experience-title {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 27px;
+  font-size: 14px;
+  color: #4D4D4D;
+}
+.experience-title svg {
+  margin-left:7px;
+  margin-top: 2px;
 }
